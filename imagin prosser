@@ -1,0 +1,26 @@
+  LIBRARY ieee;
+  USE ieee.std_logic_1164.ALL;
+  use ieee.std_logic_unsigned.all;
+  
+    entity testbench IS
+  end entity testbench;
+  architecture str of testbench is
+		signal b:integer:=0;
+		signal a:integer:=0;
+		
+				begin
+		
+		
+				PROCESS
+		     BEGIN 
+			 
+		for i in 0 to 15 loop
+			for j in 0 to 15 loop
+				a <= a + 1 ;
+					wait for 10 ns;
+			end loop;
+				b <= b + 1 ;
+						end loop;
+				wait;
+				end process;
+				end architecture str;
